@@ -1,10 +1,14 @@
+*{
+    font-family: "proxima-nova", Helvetica, Arial, sans-serif;
+}
+
 body{
     padding: 0;
     padding-bottom: 30px;
     margin: 0;
     background-color: #fff;
     /* font-family: 'Merriweather Sans', sans-serif; */
-    font-family: "proxima-nova", Helvetica, Arial, sans-serif;
+    /* font-family: "proxima-nova", Helvetica, Arial, sans-serif; */
     transition: .3s;
     background-color: #03dcbd;
 }
@@ -85,6 +89,64 @@ header a, i{
 .login-search i:hover{
     background-color: #03dcbd;
     transition: .3s;
+}
+
+/* ---------------------------------*/
+.modal{
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100vh; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: #fff;
+    display: none;
+}
+
+.modal-display{
+    display: block;
+}
+
+.modal-content{
+    margin: 0 auto;
+    margin-top: 200px;
+    width: 500px;
+    padding: 50px;
+    background-color: #03dcbd;
+}
+
+.modal-content p{
+    text-transform: capitalize;
+    color: #fff;
+    margin: 0;
+}
+
+.modal-content input{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    background: none;
+    margin-bottom: 40px;
+    color: #fff;
+}
+
+.modal-content a{
+    /* margin-top: 50px; koji kurac */
+    color: #fff;
+    /* padding-top: 20px; */
+    padding: 5px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.modal-content a:hover{
+    color: #03dcbd;
+    background-color: #fff;
+    transition: .3s;
+}
+
+#particles.js{
+    
 }
 
 /* ---------------------------------*/
@@ -355,7 +417,7 @@ header a, i{
     /* padding: 5px; */
     border: 1px solid rgba(0, 0, 0, .1);
     /* box-shadow: 0 2px 1px 0 rgba(0,0,0,.2); */
-    
+    background-color: #01c2a5;
     text-align: center;
     color: #00a890;
 }

@@ -17,3 +17,19 @@ window.addEventListener('scroll', function(){
     }
 
 })
+
+particlesJS.load('particles-js', 'particles.json', function() {
+    console.log('callback - particles.js config loaded');
+  });
+
+var modal = document.querySelector('.modal');
+
+document.querySelector('.fa-user').addEventListener('click', function(){
+    modal.classList.add('modal-display');
+})
+
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.classList.remove('modal-display');
+    }
+}
