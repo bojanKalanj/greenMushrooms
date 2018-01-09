@@ -149,6 +149,40 @@ header a, i{
     
 }
 
+.filters ul{
+    margin-top: 20px;
+    justify-content: flex-start;
+}
+
+.filters li{
+    /* border: 1px solid red; */
+    margin-right: 30px;
+}
+
+.filters a{
+    position: relative;    
+    color: #fff;
+}
+
+.filters a:before{
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    height: 2px;
+    width: 0%;
+    background-color: #fff;
+}
+
+.filters li:hover a:before{
+    width: 100%;
+}
+
+.filters-active{
+    border-bottom: 2px solid #fff;
+}
+
+
 /* ---------------------------------*/
 
 .menu-dropdown{
@@ -412,8 +446,8 @@ header a, i{
 }
 
 .card{
-    width: 24.5%;
-    margin-top: 5px;
+    width: 23%;
+    margin-top: 27px;
     /* padding: 5px; */
     border: 1px solid rgba(0, 0, 0, .1);
     /* box-shadow: 0 2px 1px 0 rgba(0,0,0,.2); */
