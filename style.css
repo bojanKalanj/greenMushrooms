@@ -103,28 +103,33 @@ header a, i{
 }
 
 .loader{
+    text-align: center;
     display: block;
     position: relative;
     left: 50%;
     top: 20%;
     width: 70px;
     height: 70px;
-    margin: -50px 0 0 -50px;
-    border: 7px solid transparent;
-    border-top-color: #00a890;
-    border-bottom-color: #00a890;         
-    border-radius: 50%;
-    -webkit-animation: spin 2s linear infinite; /* Chrome, Opera 15+, Safari 5+ */
-          animation: spin 2s linear infinite; /* Chrome, Firefox 16+, IE 10+, Opera */
+    margin: -35px 0 0 -35px;
+    /* border: 7px solid transparent; */
+    /* border-top-color: #00a890; */
+    /* border-bottom-color: #00a890;          */
+    /* border-radius: 50%; */
+    /* -webkit-animation: spin 2s linear infinite;  */
+          /* animation: spin 2s linear infinite;  */
+}
+
+.loader img{
+    height: 50px;
 }
 
 .loader:before{
     content: '';
     position: absolute;
-    top: 15px;
-    left: 15px;
-    right: 15px;
-    bottom: 15px;
+    top: -15px;
+    left: -15px;
+    right: -15px;
+    bottom: -15px;
     border: 5px solid transparent;
     border-top-color: #fff;  
     border-bottom-color: #fff;         
@@ -136,12 +141,13 @@ header a, i{
 .loader:after{
     content: '';
     position: absolute;
-    top: 30px;
-    left: 30px;
-    right: 25px;
-    bottom: 25px;
-    border: 3px solid brown;
-    background-color: brown;
+    top: -30px;
+    left: -30px;
+    right: -25px;
+    bottom: -25px;
+    border: 5px solid transparent;
+    border-top-color: #00a890;
+    /* background-color: brown; */
     border-radius: 50%;
     -webkit-animation: spin 1.5s linear infinite; 
           animation: spin 1.5s linear infinite; 
@@ -246,7 +252,7 @@ header a, i{
 
 }
 
-/* .filters a:before{
+.filters a:before{
     content: '';
     position: absolute;
     top: 100%;
@@ -254,19 +260,20 @@ header a, i{
     height: 2px;
     width: 0%;
     background-color: #fff;
-} */
-
-/* .filters li:hover a:before{
-    width: 100%;
-} */
-
-.filters li:hover a{
-    background-color: #00a890;
 }
 
-.filters-active{
-    /* border: 1px solid #fff; */
+.filters li:hover a:before{
+    width: 100%;
+    transition: .3s;
+}
+
+/* .filters li:hover a{
     background-color: #00a890;
+} */
+
+.filters-active{
+    border-bottom: 2px solid #fff;
+    /* background-color: #00a890; */
     /* border: 2px solid #00a890; */
     /* background-color: #00a890; */
 }
