@@ -93,6 +93,86 @@ header a, i{
 }
 
 /* ---------------------------------*/
+.preloader-wrap{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+}
+
+.loader{
+    display: block;
+    position: relative;
+    left: 50%;
+    top: 20%;
+    width: 70px;
+    height: 70px;
+    margin: -50px 0 0 -50px;
+    border: 7px solid transparent;
+    border-top-color: #00a890;
+    border-bottom-color: #00a890;         
+    border-radius: 50%;
+    -webkit-animation: spin 2s linear infinite; /* Chrome, Opera 15+, Safari 5+ */
+          animation: spin 2s linear infinite; /* Chrome, Firefox 16+, IE 10+, Opera */
+}
+
+.loader:before{
+    content: '';
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    right: 15px;
+    bottom: 15px;
+    border: 5px solid transparent;
+    border-top-color: #fff;  
+    border-bottom-color: #fff;         
+    border-radius: 50%;
+    -webkit-animation: spin 3s linear infinite; /* Chrome, Opera 15+, Safari 5+ */
+          animation: spin 3s linear infinite; /* Chrome, Firefox 16+, IE 10+, Opera */
+}
+
+.loader:after{
+    content: '';
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    right: 25px;
+    bottom: 25px;
+    border: 3px solid brown;
+    background-color: brown;
+    border-radius: 50%;
+    -webkit-animation: spin 1.5s linear infinite; 
+          animation: spin 1.5s linear infinite; 
+}
+
+@-webkit-keyframes spin {
+    0%   { 
+        -webkit-transform: rotate(0deg);  /* Chrome, Opera 15+, Safari 3.1+ */
+      -ms-transform: rotate(0deg);  /* IE 9 */
+          transform: rotate(0deg);  /* Firefox 16+, IE 10+, Opera */
+     }
+    100% { 
+        -webkit-transform: rotate(360deg);  /* Chrome, Opera 15+, Safari 3.1+ */
+        -ms-transform: rotate(360deg);  /* IE 9 */
+            transform: rotate(360deg);  /* Firefox 16+, IE 10+, Opera */
+     }
+  }
+  @keyframes spin {
+    0%   { 
+        -webkit-transform: rotate(0deg);  /* Chrome, Opera 15+, Safari 3.1+ */
+      -ms-transform: rotate(0deg);  /* IE 9 */
+          transform: rotate(0deg);  /* Firefox 16+, IE 10+, Opera */
+     }
+    100% { 
+        -webkit-transform: rotate(360deg);  /* Chrome, Opera 15+, Safari 3.1+ */
+        -ms-transform: rotate(360deg);  /* IE 9 */
+            transform: rotate(360deg);  /* Firefox 16+, IE 10+, Opera */
+     }
+  }
+
+/* ---------------------------------*/
 .modal{
     position: fixed; /* Stay in place */
     z-index: 1; /* Sit on top */
